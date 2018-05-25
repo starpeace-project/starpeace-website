@@ -1,5 +1,5 @@
 
-# Starpeace Website
+# starpeace-website
 
 [![Build Status](https://travis-ci.org/ronappleton/starpeace-website.svg)](https://travis-ci.org/ronappleton/starpeace-website)
 
