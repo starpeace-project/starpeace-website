@@ -1,0 +1,71 @@
+
+$prime-text-color: #fff
+$prime-link-color: #fff
+
+#prime-container
+  background: url("/assets/background.jpg") top center no-repeat
+  background-size: cover
+  color: $prime-text-color
+  max-height: 80rem
+  width: 100%
+  text-align: center
+
+  a
+    color: $prime-link-color
+    font-size: 1.25rem
+
+    &.documentation,
+    &.login-header,
+      float: left
+      margin: 2rem
+
+    &.community,
+    &.github,
+      float: right
+      margin: 2rem
+
+  .content
+    padding: 6rem 0 3rem
+    margin: 0 15%
+
+    #logo
+      margin-bottom: 2rem
+
+    h1
+      margin-bottom: 5rem
+      font-size: 6rem
+      letter-spacing: 1rem
+
+    h2
+      margin: 5rem 0
+      font-size: 3rem
+
+    .carousel-item
+      max-height: 25rem
+      overflow: hidden
+
+    .actions
+      a
+        font-size: 2rem
+        margin: 0 1rem
+        min-width: 10rem
+        padding: 1rem 2rem
+
+#primary-transition-container
+  margin: 4rem 25% 0
+  text-align: center
+
+
+#details-container
+  margin: 6rem 25%
+
+  .row
+    &:not(:first-child)
+      margin-top: 2rem
+
+  .feature
+    font-size: 1rem
+
+  .feature-img-placeholder
+    background-color: #ccc
+    min-height: 10rem

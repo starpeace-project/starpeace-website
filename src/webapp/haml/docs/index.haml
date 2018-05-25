@@ -1,0 +1,62 @@
+!!! 5
+%html
+  %head
+    %title STARPEACE
+    %meta{charset: 'utf-8'}
+    %meta{viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'}
+
+    %link{rel: 'shortcut icon', type: 'image/x-icon', href: '/assets/favicon.ico'}
+    %link{rel: 'icon', type: 'image/x-icon', href: '/assets/favicon.ico'}
+
+    %link{rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round|Open+Sans+Condensed:300'}
+    %link{rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css'}
+    %link{rel: 'stylesheet', type: 'text/css', href: '/assets/website-main.min.css'}
+
+    %script{type: 'text/javascript', src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'}
+    %script{type: 'text/javascript', src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'}
+    %script{type: 'text/javascript', src: 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js'}
+    %script{type: 'text/javascript', src: 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js'}
+
+    %script{crossorigin: 'anonymous', defer, src: 'https://use.fontawesome.com/releases/v5.0.10/js/solid.js'}
+    %script{crossorigin: 'anonymous', defer, src: 'https://use.fontawesome.com/releases/v5.0.10/js/regular.js'}
+    %script{crossorigin: 'anonymous', defer, src: 'https://use.fontawesome.com/releases/v5.0.10/js/fontawesome.js'}
+
+    %script{type: 'text/javascript', src: '/assets/website-main.min.js'}
+
+  %body
+    #common-header.clearfix
+      .common-logo
+        %a.logo{href: '/'}
+          %h1 STAR
+          %img{src: '/assets/logo.png'}
+          %h1 PEACE
+
+      .welcome
+        %span.message Welcome, Visitor!
+        %a.login-header{href: '/login.html'} Sign In
+
+      .development
+        %a.documentation{href: '/docs'} Documentation
+        %a.community{href: 'https://starpeace.ovh/'} Development Community
+        %a.github{href: 'https://github.com/ronappleton/starpeace-website'}
+          %img{src: '/assets/github.png'}
+
+    #documentation-container.container-fluid
+      %h2 Documentation
+
+      .card.text-white.bg-info
+        .card-body
+          User Guide and gameplay documentation is currently in-progress
+
+    #footer-container.container-fluid
+      .row
+        .col
+          %a{href: '/docs'} Documentation
+        .col
+          %a{href: '/privacy.html'} Privacy
+        .col
+          %a{href: 'https://github.com/ronappleton/starpeace-website'} GitHub
+
+      .row.copyright
+        .col
+          Copyright &copy; 2018

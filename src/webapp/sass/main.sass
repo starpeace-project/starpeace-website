@@ -1,0 +1,94 @@
+
+$bg-color: #eee
+$footer-bg-color: #fff
+
+$text-color: #000
+$link-color: #000
+$common-header-text-color: #fff
+
+body
+  background-color: $bg-color
+  box-sizing: border-box
+  color: $text-color
+  font-family: 'Open Sans', sans-serif
+  font-size: 14px
+  margin: 0
+  padding: 0
+
+a
+  color: $link-color
+  font-weight: bold
+  text-decoration: none
+
+h1
+  font-family: 'Varela Round', sans-serif
+  letter-spacing: 0.5rem
+  text-shadow: 0 0 2rem rgba(0, 0, 0, 0.7)
+
+h2
+  font-family: 'Open Sans Condensed', sans-serif
+  font-size: 3rem
+  text-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.45)
+
+h3
+  font-family: 'Open Sans Condensed', sans-serif
+  font-size: 2rem
+  text-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.2)
+
+#common-header
+  background: url("/assets/background.jpg") top center no-repeat
+  background-size: cover
+  color: $common-header-text-color
+  font-size: 1.25rem
+  line-height: 3rem
+  padding-top: 0.25rem
+
+  .common-logo
+    float: left
+
+    img
+      height: 2.5rem
+      display: inline-block
+      margin: 0 0 0.5rem
+      vertical-align: middle
+
+    h1
+      display: inline-block
+      font-size: 3rem
+      line-height: 3rem
+      margin: 0.25rem 0.25rem 0.5rem
+      vertical-align: middle
+
+      &:not(:first-child)
+        margin-left: 0.5rem
+
+  a
+    color: $common-header-text-color
+
+  .welcome
+    float: left
+    margin: 0.25rem 0 0 0.5rem
+
+    .message
+      margin-right: 1rem
+
+  .development
+    float: right
+
+    a
+      line-height: 3rem
+      margin: 0 1rem
+      vertical-align: middle
+
+#footer-container
+  background-color: $footer-bg-color
+  margin-top: 2rem
+  padding: 2rem 0 1rem
+  text-align: center
+
+  .row
+    margin: 0 25% 0
+
+  .copyright
+    margin-top: 2rem
+    margin-bottom: 1rem
