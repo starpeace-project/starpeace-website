@@ -92,8 +92,7 @@ module.exports = function(grunt) {
       compile: {
         files: {
           'build/public/index.html': 'src/webapp/haml/index.haml',
-          'build/public/privacy.html': 'src/webapp/haml/privacy.haml',
-          'build/public/docs/index.html': 'src/webapp/haml/docs/index.haml',
+          'build/public/privacy.html': 'src/webapp/haml/privacy.haml'
         }
       }
     },
