@@ -7,7 +7,7 @@ Primary website application for [Starpeace](https://www.starpeace.io), including
 
 ## Official Documentation
 
-Documentation for client gameplay can be found on the [Starpeace website](https://www.starpeace.io/docs).
+Documentation for client gameplay can be found on the [Starpeace website](https://docs.starpeace.io).
 
 ## Roadmap
 
