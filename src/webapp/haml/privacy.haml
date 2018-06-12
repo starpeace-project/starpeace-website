@@ -23,6 +23,13 @@
 
     %script{type: 'text/javascript', src: '/assets/website-main.min.js'}
 
+    %script{async, src: 'https://www.googletagmanager.com/gtag/js?id=UA-120729341-1'}
+    :javascript
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'UA-120729341-1');
+
   %body
     #common-header.clearfix
       .common-logo
@@ -37,7 +44,7 @@
 
       .development
         %a.documentation{href: 'https://docs.starpeace.io'} Documentation
-        %a.community{href: 'https://starpeaceproject.com/'} Development Community
+        %a.community{href: 'https://starpeaceproject.com/'} Community
         %a.github{href: 'https://github.com/ronappleton/starpeace-website'}
           %img{src: '/assets/github.png'}
 

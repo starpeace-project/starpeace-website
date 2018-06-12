@@ -23,13 +23,21 @@
 
     %script{type: 'text/javascript', src: '/assets/website-main.min.js'}
 
+    %script{async, src: 'https://www.googletagmanager.com/gtag/js?id=UA-120729341-1'}
+    :javascript
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'UA-120729341-1');
+
+
   %body
     %section#prime-container
       %a.documentation{href: 'https://docs.starpeace.io'} Documentation
       %a.login-header{href: 'https://client.starpeace.io/login.html'} Sign In
       %a.github{href: 'https://github.com/ronappleton/starpeace-website'}
         %img{src: '/assets/github.png'}
-      %a.community{href: 'https://starpeaceproject.com/'} Development Community
+      %a.community{href: 'https://starpeaceproject.com/'} Community
 
       .content.container-fluid
         .row
