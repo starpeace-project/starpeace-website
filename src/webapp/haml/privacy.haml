@@ -21,14 +21,10 @@
     %script{crossorigin: 'anonymous', defer, src: 'https://use.fontawesome.com/releases/v5.0.10/js/regular.js'}
     %script{crossorigin: 'anonymous', defer, src: 'https://use.fontawesome.com/releases/v5.0.10/js/fontawesome.js'}
 
+    %script{async, src: 'https://www.googletagmanager.com/gtag/js?id=UA-120729341-1'}
+
     %script{type: 'text/javascript', src: '/assets/website-main.min.js'}
 
-    %script{async, src: 'https://www.googletagmanager.com/gtag/js?id=UA-120729341-1'}
-    :javascript
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', 'UA-120729341-1');
 
   %body
     #common-header.clearfix
