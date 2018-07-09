@@ -139,6 +139,13 @@ $sp-primary: #6ea192
 $sp-primary-bg: #395950
 $sp-dark-bg: #2a453f
 
+#application-body
+  .columns
+    margin-right: 0
+
+    > .column
+      padding-right: 0
+
 h3
   margin-top: 2rem
 
