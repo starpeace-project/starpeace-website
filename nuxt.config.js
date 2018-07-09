@@ -1,6 +1,8 @@
 const fs = require('fs')
 const webpack = require('webpack')
 
+const is_development = process.env.NODE_ENV === 'development'
+
 module.exports = {
   css: [
     { src: '~/assets/stylesheets/bulma-starpeace.sass', lang: 'sass' }
@@ -38,7 +40,7 @@ module.exports = {
     }
   },
   modules: [
-    '@nuxtjs/moment', ['@nuxtjs/google-analytics', { id: 'UA-120729341-1' }]
+    '@nuxtjs/moment', ['@nuxtjs/google-analytics', { id: 'UA-120729341-1', debug: { sendHitTask: !is_development } }]
   ],
   plugins: [
     { src: '~/plugins/font-awesome', ssr: false }

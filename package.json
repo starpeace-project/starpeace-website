@@ -6,7 +6,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "dev": "cross-env PORT=11000 nuxt",
+    "dev": "cross-env NODE_ENV=development PORT=11000 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "cross-env nuxt generate && del-cli ./dist/.nojekyll",
