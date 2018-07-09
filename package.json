@@ -1,25 +1,37 @@
 {
   "name": "starpeace-website",
   "version": "0.1.0",
-  "description": "Primary website application for Starpeace",
-  "keywords": [],
+  "description": "STARPEACE multiplayer economic simulation",
   "author": "ronappleton",
-  "license": "MIT",
   "private": true,
-  "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-coffee": "^2.0.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^2.2.1",
-    "grunt-contrib-uglify-es": "git://github.com/gruntjs/grunt-contrib-uglify.git#harmony",
-    "grunt-contrib-watch": "*",
-    "grunt-haml": "^0.9.0",
-    "grunt-run": "^0.8.1",
-    "grunt-sass": "^2.1.0",
-    "matchdep": "*"
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env PORT=11000 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "cross-env nuxt generate && del-cli ./dist/.nojekyll",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
   },
   "dependencies": {
-    "express": "^4.16.2"
+    "nuxt": "^1.0.0"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.0",
+    "@fortawesome/free-brands-svg-icons": "^5.1.0",
+    "@fortawesome/free-regular-svg-icons": "^5.1.0",
+    "@fortawesome/free-solid-svg-icons": "^5.1.0",
+    "@fortawesome/vue-fontawesome": "^0.1.0",
+    "@nuxtjs/moment": "^1.0.0",
+    "bulma": "^0.7.1",
+    "coffee-loader": "^0.9.0",
+    "coffeescript": "^2.3.1",
+    "cross-env": "^5.2.0",
+    "del-cli": "^1.1.0",
+    "haml-loader": "^0.1.0",
+    "hamljs": "^0.6.2",
+    "moment": "^2.22.2",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.3"
   }
 }

@@ -14,14 +14,14 @@ phases:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
-      - grunt build
+      - npm run generate
   post_build:
     commands:
       - echo Entered the post_build phase...
       - aws s3 sync --delete build/public "s3://www.starpeace.io/"
+      - aws cloudfront create-invalidation --distribution-id E34NPPEGZW8NEF --paths / /privacy/
       - echo Build completed on `date`
 
 artifacts:
   files:
     - build/public/**/*
-
