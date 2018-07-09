@@ -91,6 +91,14 @@ $sp-primary: #6ea192
 $sp-primary-bg: #395950
 $sp-dark-bg: #2a453f
 
+#application-body
+  > div
+    margin-right: 0
+
+  .column
+    &.is-6
+      padding-right: 0
+
 .banner
   color: #fff
   margin-bottom: 1.5rem
@@ -143,6 +151,12 @@ $sp-dark-bg: #2a453f
     margin-bottom: 4rem
     margin-top: 2rem
     text-align: center
+
+    h2
+      padding: 0 .5rem
+
+    h3
+      padding: 0 1rem
 
   .feature
     font-size: 1.2rem
