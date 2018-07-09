@@ -10,8 +10,8 @@ html
   overflow-y: scroll
 
 body
-  background: url('~/assets/images/background.jpg') top center no-repeat
-  background-size: cover
+  background: url('~/assets/images/background.jpg') top center repeat-y
+  background-size: 100%
   box-sizing: border-box
   color: #000
   font-family: 'Open Sans', sans-serif
