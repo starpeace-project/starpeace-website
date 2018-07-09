@@ -38,10 +38,9 @@ module.exports = {
     }
   },
   modules: [
-    '@nuxtjs/moment'
+    '@nuxtjs/moment', ['@nuxtjs/google-analytics', { id: 'UA-120729341-1' }]
   ],
   plugins: [
-    { src: '~/plugins/font-awesome', ssr: false },
-    { src: '~/plugins/google-analytics', ssr: false }
+    { src: '~/plugins/font-awesome', ssr: false }
   ]
 }
