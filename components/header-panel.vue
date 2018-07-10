@@ -11,7 +11,7 @@
       %img.starpeace-logo
       %h1 PEACE
 
-  .welcome.is-hidden-mobile
+  .welcome.is-hidden-mobile{'v-bind:class':'welcome_css_class'}
     %span Welcome, Visitor!
     %a.login-header{href: 'https://client.starpeace.io/login'} Sign In
 
@@ -32,6 +32,8 @@ export default
   computed:
     show_header: -> true
     show_logo: -> @show_header_logo
+
+    welcome_css_class: -> { 'is-hidden-tablet-only': !@show_logo }
 </script>
 
 <style lang='sass' scoped>
