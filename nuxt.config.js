@@ -12,12 +12,15 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'STARPEACE multiplayer economic simulation' }
+      { hid: 'description', name: 'description', content: 'STARPEACE: a massively multi-player city-building and economic simulation game with persistent worlds, inter-player commerce, supply-chains and politics, and over 300 different factories, stores, residences, or offices to construct.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round' }
     ]
+  },
+  render: {
+    resourceHints: false
   },
   generate: {
     fallback: false
