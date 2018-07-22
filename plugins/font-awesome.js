@@ -1,7 +1,7 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faDiscord, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faDiscord, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faDiscord, faGithub)
+library.add(faDiscord, faGithub, faTwitter)
 
 
 import Vue from 'vue'
