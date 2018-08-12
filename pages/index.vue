@@ -2,7 +2,6 @@
 %no-ssr
   #application-container{'v-cloak':true}
     %sp-header{'v-bind:show_header_logo':'false'}
-
     #application-body
       .columns
         .column.is-6.is-offset-3
@@ -14,18 +13,13 @@
             %h1 STAR
             %img.starpeace-logo
             %h1 PEACE
-
           #demo-card.card
             .card-content
               %img{src: '~/assets/images/demo1.gif'}
-
-          %h2#sub-banner
-            Tycoon Supremacy through Capitalistic Cooperation and Competition
-
+          %h2#sub-banner Tycoon Supremacy through Capitalistic Cooperation and Competition
           #demo-actions.buttons.is-centered
             %a.button.is-primary.is-large.demo{href: 'https://client.starpeace.io/', role: 'button'} Play Now
             %a.button.is-link.is-large.login{href: 'https://client.starpeace.io/login.html', role: 'button'} Sign In
-
       #main-body-container.columns
         .column.is-6.is-offset-3
           #main-body-banner
@@ -34,7 +28,6 @@
               Get started today! Play STARPEACE, a multiplayer economic simulation and classic city-building game,
               directly in your browser with a client using the latest HTML5 and WebGL technologies and supported with
               a modern service-oriented architecture backend.
-
           #details-card.card
             .card-content
               .columns.feature
@@ -44,35 +37,30 @@
                     Choose business acquisitions wisely as you build retail chains, real estate ventures, heavy industry or even farming while competing against hundreds of other players worldwide
                 .column.is-4
                   .feature-img-placeholder
-
               .columns.feature
                 .column.is-4
                   .feature-img-placeholder
                 .column.is-8
                   %h3 Realistic simulation of city, planetary, and inter-planetary economics
                   Set up supply chains of warehouses refineries, and factories or trade with other players at negotiated rates for in-demand resources across cities, countries and even planets
-
               .columns.feature
                 .column.is-8
                   %h3 Choose from a handful of different Seals
                   A Seal is a collection of technologies and patent designs that provides companies with certain strengths and weaknesses, access to different industries and resources, and a distinct building look
                 .column.is-4
                   .feature-img-placeholder
-
               .columns.feature
                 .column.is-4
                   .feature-img-placeholder
                 .column.is-8
                   %h3 Micro-manage company policy, prices, and strategy
                   Intuitive interface provides complete control of company and building strategy, as well as ability to view and interact other tycoons' company portfolios and business ventures
-
               .columns.feature
                 .column.is-8
                   %h3 Familiar city-building gameplay mechanics
                   Overlay maps gives players the ability to highlight the high crime areas, low, middle, upper class residential populations, pollution, and location coverage of specific types of buildings
                 .column.is-4
                   .feature-img-placeholder
-
     %sp-footer
 </template>
 

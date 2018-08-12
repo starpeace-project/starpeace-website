@@ -1,17 +1,16 @@
 <template lang='haml'>
-#footer-container
-  .columns.links
-    .column.is-2.is-offset-3
-      %a{href: 'https://docs.starpeace.io'} Documentation
-    .column.is-2
-      %a{href: '/privacy'} Privacy
-    .column.is-2
-      %a{href: 'https://github.com/ronappleton/starpeace-website', target:'_blank'} GitHub
+  #footer-container
+    .columns.links
+      .column.is-2.is-offset-3
+        %a{href: 'https://docs.starpeace.io'} Documentation
+      .column.is-2
+        %a{href: '/privacy'} Privacy
+      .column.is-2
+        %a{href: 'https://github.com/starpeace-project/starpeace-website', target:'_blank'} GitHub
 
-  .columns.copyright
-    .column.is-6.is-offset-3
-      %span{'v-once':true, 'v-html':'copyright()'}
-
+    .columns.copyright
+      .column.is-6.is-offset-3
+        %span{'v-once':true, 'v-html':'copyright()'}
 </template>
 
 <script lang='coffee'>

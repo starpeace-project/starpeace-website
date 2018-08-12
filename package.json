@@ -1,8 +1,8 @@
 {
-  "name": "starpeace-website",
+  "name": "@starpeace/starpeace-website",
   "version": "0.1.0",
-  "description": "STARPEACE multiplayer economic simulation",
-  "author": "ronappleton",
+  "description": "STARPEACE multiplayer economic simulation website",
+  "author": "starpeace-project",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -14,7 +14,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.4.2"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.0",
@@ -32,7 +32,7 @@
     "haml-loader": "^0.1.0",
     "hamljs": "^0.6.2",
     "moment": "^2.22.2",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.3"
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0"
   }
 }
