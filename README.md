@@ -5,6 +5,12 @@
 
 Website application for [STARPEACE](https://www.starpeace.io), including client launchpad, game feature information, and interface into gameplay documentation.
 
+## Related Packages
+
+* [starpeace-website-client](https://github.com/starpeace-project/starpeace-website-client) - Client website application for STARPEACE multiplayer economic simulation
+* [starpeace-website-client-assets](https://github.com/starpeace-project/starpeace-website-client-assets) - Assets and gameplay resources for starpeace-website-client application
+* [starpeace-website-documentation](https://github.com/starpeace-project/starpeace-website-documentation) - Documentation website for STARPEACE multiplayer economic simulation
+
 ## Official Documentation
 
 Documentation for client gameplay can be found on the [STARPEACE documentation website](https://docs.starpeace.io).
