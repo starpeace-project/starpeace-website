@@ -17,7 +17,7 @@
 
     .development.is-hidden-mobile.is-hidden-tablet-only
       %a.documentation{href: 'https://docs.starpeace.io'} Documentation
-      %a.community{href: 'https://starpeaceproject.com/', target:'_blank'} Community
+      %a.community{href: 'https://starpeace-project.com/', target:'_blank'} Community
       %a.discord{href: 'https://discord.gg/TF9Bmsj', target:'_blank'}
         %font-awesome-icon{':icon':"['fab', 'discord']"}
       %a.twitter{href: 'https://twitter.com/starpeace_io', target:'_blank'}
