@@ -2,6 +2,7 @@
 # starpeace-website
 
 [![Build Status](https://travis-ci.org/starpeace-project/starpeace-website.svg)](https://travis-ci.org/starpeace-project/starpeace-website)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Website application for [STARPEACE](https://www.starpeace.io), including client launchpad, game feature information, and interface into gameplay documentation.
 
@@ -61,4 +62,4 @@ After building repository, website is compiled into static resources within the 
 
 ## License
 
-Starpeace website is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+starpeace-website is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
