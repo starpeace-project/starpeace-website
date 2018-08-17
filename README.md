@@ -3,6 +3,8 @@
 
 [![Build Status](https://travis-ci.org/starpeace-project/starpeace-website.svg)](https://travis-ci.org/starpeace-project/starpeace-website)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/starpeace-project/starpeace-website.svg)](https://github.com/starpeace-project/starpeace-website/stargazers)
+![Twitter Follow](https://img.shields.io/twitter/follow/starpeace_io.svg?style=social&label=Follow)
 
 Website application for [STARPEACE](https://www.starpeace.io), including client launchpad, game feature information, and interface into gameplay documentation.
 
