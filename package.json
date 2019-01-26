@@ -3,7 +3,6 @@
   "version": "0.2.0",
   "description": "STARPEACE multiplayer economic simulation website",
   "author": "starpeace-project",
-  "private": true,
   "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_ENV=development PORT=11000 nuxt",

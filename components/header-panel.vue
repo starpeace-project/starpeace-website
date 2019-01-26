@@ -13,7 +13,6 @@
 
     .welcome.is-hidden-mobile{'v-bind:class':'welcome_css_class'}
       %span Welcome, Visitor!
-      %a.login-header{href: 'https://client.starpeace.io/login'} Sign In
 
     .development.is-hidden-mobile.is-hidden-tablet-only
       %a.documentation{href: 'https://docs.starpeace.io'} Documentation

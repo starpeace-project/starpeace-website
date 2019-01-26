@@ -19,7 +19,6 @@
           %h2#sub-banner Tycoon Supremacy through Capitalistic Cooperation and Competition
           #demo-actions.buttons.is-centered
             %a.button.is-primary.is-large.demo{href: 'https://client.starpeace.io/', role: 'button'} Play Now
-            %a.button.is-link.is-large.login{href: 'https://client.starpeace.io/login.html', role: 'button'} Sign In
       #main-body-container.columns
         .column.is-6.is-offset-3
           #main-body-banner
