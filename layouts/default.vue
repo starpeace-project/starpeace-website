@@ -10,7 +10,7 @@ html
   overflow-y: scroll
 
 body
-  background: url('~/assets/images/background.jpg') top center repeat-y
+  background: url('~assets/images/background.jpg') top center repeat-y
   background-size: 100%
   box-sizing: border-box
   color: #000

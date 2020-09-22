@@ -10,9 +10,9 @@ Website application for [STARPEACE](https://www.starpeace.io), including client 
 
 ## Related Packages
 
-* [starpeace-website-client](https://github.com/starpeace-project/starpeace-website-client) - Client website application for STARPEACE multiplayer economic simulation
-* [starpeace-website-client-assets](https://github.com/starpeace-project/starpeace-website-client-assets) - Assets and gameplay resources for starpeace-website-client application
-* [starpeace-website-documentation](https://github.com/starpeace-project/starpeace-website-documentation) - Documentation website for STARPEACE multiplayer economic simulation
+* [starpeace-client-website](https://github.com/starpeace-project/starpeace-client-website) - Client website application for STARPEACE multiplayer economic simulation
+* [starpeace-client-website-assets](https://github.com/starpeace-project/starpeace-client-website-assets) - Assets and gameplay resources for starpeace-client-website application
+* [starpeace-documentation-website](https://github.com/starpeace-project/starpeace-documentation-website) - Documentation website for STARPEACE multiplayer economic simulation
 
 ## Official Documentation
 

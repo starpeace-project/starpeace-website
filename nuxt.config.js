@@ -35,11 +35,6 @@ module.exports = {
         use: 'coffee-loader',
         exclude: /(node_modules)/
       });
-      config.module.rules.push({
-        test: /\.haml$/,
-        use: 'haml',
-        exclude: /(node_modules)/
-      });
     }
   },
   modules: [

@@ -1,28 +1,28 @@
-<template lang='haml'>
-  #common-header{'v-show':'show_header', 'v-cloak':true}
-    .common-logo.not-mobile.is-hidden-mobile{'v-show':'show_logo'}
-      %a.logo{href: '/'}
-        %h1 STAR
-        %img.starpeace-logo
-        %h1 PEACE
-    .common-logo.mobile.is-hidden-tablet{'v-show':'show_logo'}
-      %a.logo{href: '/'}
-        %h1 STAR
-        %img.starpeace-logo
-        %h1 PEACE
+<template lang='pug'>
+#common-header(v-show='show_header' v-cloak=true)
+  .common-logo.not-mobile.is-hidden-mobile(v-show='show_logo')
+    a.logo(href='/')
+      h1 STAR
+      img.starpeace-logo
+      h1 PEACE
+  .common-logo.mobile.is-hidden-tablet(v-show='show_logo')
+    a.logo(href='/')
+      h1 STAR
+      img.starpeace-logo
+      h1 PEACE
 
-    .welcome.is-hidden-mobile{'v-bind:class':'welcome_css_class'}
-      %span Welcome, Visitor!
+  .welcome.is-hidden-mobile(:class='welcome_css_class')
+    span Welcome, Visitor!
 
-    .development.is-hidden-mobile.is-hidden-tablet-only
-      %a.documentation{href: 'https://docs.starpeace.io'} Documentation
-      %a.community{href: 'https://starpeace-project.com/', target:'_blank'} Community
-      %a.discord{href: 'https://discord.gg/TF9Bmsj', target:'_blank'}
-        %font-awesome-icon{':icon':"['fab', 'discord']"}
-      %a.twitter{href: 'https://twitter.com/starpeace_io', target:'_blank'}
-        %font-awesome-icon{':icon':"['fab', 'twitter']"}
-      %a.github{href: 'https://github.com/starpeace-project/starpeace-website', target:'_blank'}
-        %font-awesome-icon{':icon':"['fab', 'github']"}
+  .development.is-hidden-mobile.is-hidden-tablet-only
+    a.documentation(href='https://docs.starpeace.io') Documentation
+    a.community(href='https://starpeace-project.com/' target='_blank') Community
+    a.discord(href='https://discord.gg/TF9Bmsj' target='_blank')
+      font-awesome-icon(:icon="['fab', 'discord']")
+    a.twitter(href='https://twitter.com/starpeace_io' target='_blank')
+      font-awesome-icon(:icon="['fab', 'twitter']")
+    a.github(href='https://github.com/starpeace-project/starpeace-website' target='_blank')
+      font-awesome-icon(:icon="['fab', 'github']")
 </template>
 
 <script lang='coffee'>
