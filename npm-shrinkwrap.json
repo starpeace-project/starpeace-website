@@ -4922,6 +4922,12 @@
         "reusify": "^1.0.4"
       }
     },
+    "favicon-switcher": {
+      "version": "1.2.2",
+      "resolved": "https://registry.npmjs.org/favicon-switcher/-/favicon-switcher-1.2.2.tgz",
+      "integrity": "sha512-ABEop+bgMlFovbV1j41TfJqhT8/6tvHbB26JpseDOiQgyoMyVVYN11G17QmXq3PRv0a792HxaSuOBfU9W0n6Dg==",
+      "dev": true
+    },
     "figgy-pudding": {
       "version": "3.5.2",
       "resolved": "https://registry.npmjs.org/figgy-pudding/-/figgy-pudding-3.5.2.tgz",
