@@ -1,8 +1,35 @@
-<template>
-  <div>
-    <nuxt/>
-  </div>
+<template lang='pug'>
+#application-container(v-cloak)
+  client-only
+    sp-header(:show-header-logo='showHeaderLogo')
+
+    #application-body.columns
+      slot
+
+    sp-footer
 </template>
+
+<script>
+import Header from '~/components/header-panel';
+import Footer from '~/components/footer-panel';
+
+export default {
+  components: {
+    'sp-header': Header,
+    'sp-footer': Footer
+  },
+
+  mounted () {
+    document?.body?.classList?.add('background-img');
+  },
+
+  computed: {
+    showHeaderLogo () {
+      return this.$route.matched.map((r) => r.components.default.options?.showHeaderLogo || r.components.default.showHeaderLogo)[0] ?? false;
+    }
+  }
+}
+</script>
 
 <style lang='sass'>
 html
@@ -10,8 +37,6 @@ html
   overflow-y: scroll
 
 body
-  background: url('~assets/images/background.jpg') top center repeat-y
-  background-size: 100%
   box-sizing: border-box
   color: #000
   font-family: 'Open Sans', sans-serif
@@ -24,4 +49,8 @@ body
   -moz-user-select: none
   -ms-user-select: none
   user-select: none
+
+.background-img
+  background: url('~/assets/images/background.jpg') top center repeat-y
+  background-size: 100%
 </style>

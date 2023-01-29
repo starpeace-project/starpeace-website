@@ -2,6 +2,7 @@
 .sass-cache/
 .settings/
 node_modules/
+.output
 dist
 .project
 npm-debug.log

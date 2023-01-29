@@ -10,15 +10,19 @@
 
   .columns.copyright
     .column.is-6.is-offset-3
-      span(v-once=true v-html='copyright()')
+      span Copyright &copy; {{currentYear}}
 </template>
 
-<script lang='coffee'>
-import moment from 'moment'
+<script>
+import { DateTime } from 'luxon';
 
-export default
-  methods:
-    copyright: () -> "Copyright &copy; #{moment().year()}"
+export default {
+  computed: {
+    currentYear () {
+      return DateTime.now().year;
+    }
+  }
+}
 </script>
 
 <style lang='sass' scoped>

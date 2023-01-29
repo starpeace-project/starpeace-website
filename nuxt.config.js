@@ -1,25 +1,31 @@
-const fs = require('fs')
-const webpack = require('webpack')
+const is_development = process.env.NODE_ENV === 'development';
 
-const is_development = process.env.NODE_ENV === 'development'
-
-module.exports = {
+export default defineNuxtConfig({
   css: [
-    { src: '~/assets/stylesheets/bulma-starpeace.sass', lang: 'sass' }
+    'bulma',
+    '@/assets/stylesheets/bulma-starpeace.sass'
   ],
-  head: {
-    title: 'STARPEACE',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'STARPEACE: a massively multi-player city-building and economic simulation game with persistent worlds, inter-player commerce, supply-chains and politics, and over 300 different factories, stores, residences, or offices to construct.' }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', media: '(prefers-color-scheme:no-preference)'},
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon-dark.ico', media: '(prefers-color-scheme:dark)' },
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon-light.ico', media: '(prefers-color-scheme:light)' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round' }
-    ]
+  app: {
+    buildAssetsDir: '/resources/',
+    head: {
+      title: 'STARPEACE',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: 'STARPEACE: a massively multi-player city-building and economic simulation game with persistent worlds, inter-player commerce, supply-chains and politics, and over 300 different factories, stores, residences, or offices to construct.' }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', media: '(prefers-color-scheme:no-preference)'},
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon-dark.ico', media: '(prefers-color-scheme:dark)' },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon-light.ico', media: '(prefers-color-scheme:light)' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round' }
+      ]
+    }
+  },
+  runtimeConfig: {
+    public: {
+      sendAnalytics: !is_development
+    }
   },
   render: {
     resourceHints: false
@@ -28,22 +34,16 @@ module.exports = {
     fallback: false
   },
   telemetry: false,
-  build: {
-    // analyze: true,
-    publicPath: '/assets/',
-    extend (config, { isDev, isClient }) {
-      config.module.rules.push({
-        test: /\.coffee$/,
-        use: 'coffee-loader',
-        exclude: /(node_modules)/
-      });
-    }
+  static: {
+    prefix: false
   },
-  modules: [
-    '@nuxtjs/moment', ['@nuxtjs/google-analytics', { id: 'UA-120729341-1', debug: { sendHitTask: !is_development } }]
-  ],
-  plugins: [
-    { src: '~/plugins/favicon-switcher', ssr: false },
-    { src: '~/plugins/font-awesome', ssr: false }
-  ]
-}
+  build: {
+    loaders: {
+      sass: {
+        implementation: require('sass')
+      }
+    },
+    standalone: true
+  },
+  buildModules: ['@nuxt/typescript-build']
+});

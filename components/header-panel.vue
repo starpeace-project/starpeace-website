@@ -1,40 +1,34 @@
 <template lang='pug'>
-#common-header(v-show='show_header' v-cloak=true)
-  .common-logo.not-mobile.is-hidden-mobile(v-show='show_logo')
+#common-header
+  .common-logo.not-mobile.is-hidden-mobile(v-show='showHeaderLogo')
     a.logo(href='/')
       h1 STAR
       img.starpeace-logo
       h1 PEACE
-  .common-logo.mobile.is-hidden-tablet(v-show='show_logo')
+  .common-logo.mobile.is-hidden-tablet(v-show='showHeaderLogo')
     a.logo(href='/')
       h1 STAR
       img.starpeace-logo
       h1 PEACE
 
-  .welcome.is-hidden-mobile(:class='welcome_css_class')
+  .welcome.is-hidden-mobile(:class="{ 'is-hidden-tablet-only': !showHeaderLogo }")
     span Welcome, Visitor!
 
   .development.is-hidden-mobile.is-hidden-tablet-only
     a.documentation(href='https://docs.starpeace.io') Documentation
-    a.community(href='https://starpeace-project.com/' target='_blank') Community
+    a.community(href='https://docs.starpeace.io/reference/project/') Community
     a.discord(href='https://discord.gg/TF9Bmsj' target='_blank')
       font-awesome-icon(:icon="['fab', 'discord']")
-    a.twitter(href='https://twitter.com/starpeace_io' target='_blank')
-      font-awesome-icon(:icon="['fab', 'twitter']")
     a.github(href='https://github.com/starpeace-project/starpeace-website' target='_blank')
       font-awesome-icon(:icon="['fab', 'github']")
 </template>
 
-<script lang='coffee'>
-export default
-  props:
-    show_header_logo: Boolean
-
-  computed:
-    show_header: -> true
-    show_logo: -> @show_header_logo
-
-    welcome_css_class: -> { 'is-hidden-tablet-only': !@show_logo }
+<script>
+export default {
+  props: {
+    showHeaderLogo: Boolean
+  }
+}
 </script>
 
 <style lang='sass' scoped>

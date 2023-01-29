@@ -2,26 +2,31 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 16
     commands:
       - echo Entered the install phase...
       - npm update -g npm
       - npm install -g grunt-cli
+
   pre_build:
     commands:
       - echo Entered the pre_build phase...
       - npm install
+
   build:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
       - npm run generate
+
   post_build:
     commands:
       - echo Entered the post_build phase...
       - aws s3 sync --delete dist "s3://www.starpeace.io/"
-      - aws cloudfront create-invalidation --distribution-id E34NPPEGZW8NEF --paths / /privacy/
+      - aws cloudfront create-invalidation --distribution-id E34NPPEGZW8NEF --paths / /*
       - echo Build completed on `date`
 
 artifacts:
   files:
-    - dist/**/*
+    - .output/public/**/*
