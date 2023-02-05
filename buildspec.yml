@@ -24,7 +24,7 @@ phases:
     commands:
       - echo Entered the post_build phase...
       - aws s3 sync --delete dist "s3://www.starpeace.io/"
-      - aws cloudfront create-invalidation --distribution-id E34NPPEGZW8NEF --paths / /*
+      - aws cloudfront create-invalidation --distribution-id E34NPPEGZW8NEF --paths / "/*"
       - echo Build completed on `date`
 
 artifacts:

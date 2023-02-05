@@ -7,8 +7,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development nuxt dev --port 11000",
     "build": "nuxt build",
-    "generate": "cross-env nuxt generate",
-    "precommit": "npm run lint"
+    "generate": "cross-env nuxt generate"
   },
   "dependencies": {
     "nuxt": "^3.1.1"
