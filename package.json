@@ -10,26 +10,26 @@
     "generate": "cross-env nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^3.3.2"
+    "nuxt": "^3.7.1"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.3.0",
-    "@fortawesome/free-brands-svg-icons": "^6.3.0",
-    "@fortawesome/free-regular-svg-icons": "^6.3.0",
-    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/vue-fontawesome": "^3.0.3",
-    "@types/lodash": "^4.14.191",
-    "@types/luxon": "^3.2.0",
+    "@types/lodash": "^4.14.198",
+    "@types/luxon": "^3.3.2",
     "bulma": "^0.9.4",
     "cross-env": "^7.0.3",
     "favicon-switcher": "^1.2.2",
     "lodash": "^4.17.21",
-    "luxon": "^3.3.0",
+    "luxon": "^3.4.3",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
-    "regenerator-runtime": "^0.13.11",
-    "sass": "1.60.0",
-    "sass-loader": "^13.2.1",
+    "regenerator-runtime": "^0.14.0",
+    "sass": "1.66.1",
+    "sass-loader": "^13.3.2",
     "vue-gtag-next": "^1.14.0"
   }
 }
