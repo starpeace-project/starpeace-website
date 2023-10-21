@@ -10,7 +10,7 @@
     "generate": "cross-env nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^3.7.1"
+    "nuxt": "^3.8.0"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
@@ -18,8 +18,8 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/vue-fontawesome": "^3.0.3",
-    "@types/lodash": "^4.14.198",
-    "@types/luxon": "^3.3.2",
+    "@types/lodash": "^4.14.200",
+    "@types/luxon": "^3.3.3",
     "bulma": "^0.9.4",
     "cross-env": "^7.0.3",
     "favicon-switcher": "^1.2.2",
@@ -28,7 +28,7 @@
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
     "regenerator-runtime": "^0.14.0",
-    "sass": "1.66.1",
+    "sass": "1.69.4",
     "sass-loader": "^13.3.2",
     "vue-gtag-next": "^1.14.0"
   }
