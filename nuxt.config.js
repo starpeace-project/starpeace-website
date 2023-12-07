@@ -2,7 +2,6 @@ const is_development = process.env.NODE_ENV === 'development';
 
 export default defineNuxtConfig({
   css: [
-    'bulma',
     '@/assets/stylesheets/bulma-starpeace.sass'
   ],
   app: {
