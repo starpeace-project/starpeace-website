@@ -7,7 +7,6 @@ phases:
     commands:
       - echo Entered the install phase...
       - npm update -g npm
-      - npm install -g grunt-cli
 
   pre_build:
     commands:
