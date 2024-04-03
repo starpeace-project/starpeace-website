@@ -10,7 +10,7 @@
     "generate": "cross-env nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^3.10.2"
+    "nuxt": "^3.11.1"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
