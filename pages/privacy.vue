@@ -1,7 +1,7 @@
 <template lang='pug'>
 .column.is-6.is-offset-3
-  #privacy-container.card
-    .card-content
+  #privacy-container.card.is-starpeace
+    .card-content.content
       h2 Privacy Policy
       h3 Your privacy is critically important to us.
       p
@@ -136,6 +136,15 @@ $sp-dark-bg: #2a453f
 
     > .column
       padding-right: 0
+
+.card
+  &.is-starpeace
+    background-color: $sp-dark-bg
+    border: 1px solid $sp-primary-bg
+    border-right: none
+    box-shadow: none
+    color: #FFF
+    position: relative
 
 h3
   margin-top: 2rem

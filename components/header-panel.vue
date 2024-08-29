@@ -1,17 +1,17 @@
 <template lang='pug'>
 #common-header
-  .common-logo.not-mobile.is-hidden-mobile(v-show='showHeaderLogo')
+  .common-logo.not-mobile.is-hidden-mobile
     a.logo(href='/')
       h1 STAR
       img.starpeace-logo
       h1 PEACE
-  .common-logo.mobile.is-hidden-tablet(v-show='showHeaderLogo')
+  .common-logo.mobile.is-hidden-tablet
     a.logo(href='/')
       h1 STAR
       img.starpeace-logo
       h1 PEACE
 
-  .welcome.is-hidden-mobile(:class="{ 'is-hidden-tablet-only': !showHeaderLogo }")
+  .welcome.is-hidden-mobile
     span Welcome, Visitor!
 
   .development.is-hidden-mobile.is-hidden-tablet-only
